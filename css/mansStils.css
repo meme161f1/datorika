@@ -1,0 +1,80 @@
+/* Kopējais lapas stils */
+body {
+    /* Fona attēls ar gaišu slāni (priekšapstrāde) */
+    background-image: linear-gradient(rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.9)), url('../Images/fons.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Navigācijas joslas krāsa */
+.w3-bar {
+    background-color: #1a2a3a !important; /* Tumši zila (Navy) */
+    padding: 2px 0;
+}
+
+/* Galvenais konteiners satura organizēšanai */
+.w3-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Virsrakstu stils - vienkāršs, bez pasvītrojumiem */
+h1 {
+    color: #1a2a3a;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+/* Sadaļu bloki (organizācijai) */
+section {
+    background: #ffffff; /* Balts fons katrai sadaļai */
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Ļoti maiga maliņa */
+}
+
+/* Attēlu stils */
+.w3-image {
+    border-radius: 4px;
+    margin: 15px 0;
+    border: 1px solid #eee;
+}
+
+/* Pogas (Excel lejuplādei) */
+.w3-button.w3-blue {
+    background-color: #3498db !important; /* Klasiski zila */
+    border-radius: 4px !important;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Papildu uzdevumu pogas footerī */
+.w3-button.w3-teal {
+    background-color: #444 !important; /* Tumši pelēka */
+    border-radius: 4px !important;
+    margin: 5px;
+}
+
+/* Video rāmja noformējums */
+.w3-card {
+    border: none;
+    background: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #777;
+}
