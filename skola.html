@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<title>Rīgas Valsts 1. ģimnāzija</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; }
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+nav {
+  float: left;
+  width: 30%;
+  padding: 20px;
+  background-image: url('images/skola.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  min-height: 500px;
+}
+
+nav h3 { background: rgba(255,255,255,0.8); padding: 5px; display: inline-block; }
+nav ul { list-style-type: decimal; padding-left: 20px; }
+nav ul li { margin-bottom: 10px; background: rgba(255,255,255,0.8); padding: 5px; border-radius: 4px; }
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+}
+
+section::after { content: ""; display: table; clear: both; }
+
+footer {
+  background-color: #777;
+  padding: 15px;
+  text-align: center;
+}
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; background: white; }
+table, th, td { border: 1px solid black; padding: 8px; text-align: left; }
+th { background-color: #ddd; }
+
+@media (max-width: 600px) {
+  nav, article { width: 100%; height: auto; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  Rīgas Valsts 1. ģimnāzija
+</header>
+
+<section>
+  <nav>
+    <h3>Satura rādītājs</h3>
+    <ul>
+      <li><a href="#vesture">Vēsture</a></li>
+      <li><a href="#mainas">Skolas nosaukumu maiņas</a></li>
+      <li><a href="#vaditaji">Zināmie skolas vadītāji (1229—1804)</a></li>
+      <li><a href="#absolventi">Skolas absolventi</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2 id="vesture">Vēsture</h2>
+    <p>Rīgas Valsts 1. ģimnāzija (saīsinājumā RV1Ģ vai RV1.ģ) ir vispārējās pamata un vidējās izglītības iestāde Rīgā. Tā ir pilsētas senākā skola. Ģimnāzija specializējas matemātikas un valodu padziļinātā apgūšanā.</p>
+    <p>Skolas pastāvēšanai iespējams izsekot līdz pat 1211. gadam, kad bīskaps Alberts Rīgā nodibināja Svētās Marijas katedrāli un pie tās — Livonijas bīskapijas domkapitula klosteri.</p>
+
+    <h2 id="mainas">Skolas nosaukumu maiņas</h2>
+    <ul>
+      <li>1211.—1528. — Domkapitula klostera skola</li>
+      <li>1528.—1631. — Rīgas pilsētas Domskola</li>
+      <li>1631.—1710. — Rīgas Akadēmiskā ģimnāzija</li>
+      <li>1711.—1804. — Rīgas Domskola (klasiskā ģimnāzija)</li>
+      <li>1996.—pašlaik — Rīgas Valsts 1. ģimnāzija</li>
+    </ul>
+
+    <h2 id="vaditaji">Zināmie skolas vadītāji (1229—1804)</h2>
+    <table>
+      <tr>
+        <th>Gadi</th>
+        <th>Vārds, uzvārds</th>
+      </tr>
+      <tr><td>ap 1239.</td><td>mācību pārzinis Heinrihs</td></tr>
+      <tr><td>1528.—1538.</td><td>rektors Jakobs Batuss</td></tr>
+      <tr><td>1780.—1787.</td><td>rektors Karls Filips Mihaels Snells</td></tr>
+      <tr><td>līdz 1804.</td><td>rektors Johans Augusts Albanuss</td></tr>
+    </table>
+
+    <h2 id="absolventi">Skolas absolventi</h2>
+    <p>Tomass Dukurs, Valters Frīdenbergs, Toms Skujiņš, Daina Taimiņa.</p>
+    
+    <h3>Rainis (Jānis Pliekšāns)</h3>
+    <p>Rainis bija izcils latviešu dzejnieks, dramaturgs un politiķis. Viņš mācījās Rīgas pilsētas ģimnāzijā no 1880. līdz 1884. gadam, kur guva pamatus savai plašajai izglītībai.</p>
+    <p>Plašāka informācija: <a href="https://www.letonika.lv/literatura/section.aspx?id=2189826" target="_blank">Letonika.lv par Raini</a></p>
+  </article>
+</section>
+
+<footer>
+  <a href="http://r1g.edu.lv" target="_blank">
+    <img src="images/logo.png" alt="RV1G logo" style="width:60px;">
+  </a>
+</footer>
+
+</body>
+</html>
