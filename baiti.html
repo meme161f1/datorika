@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Datu kalkulators</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        input[type="text"] { padding: 5px; margin: 5px; border: 1px solid #ccc; }
+    </style>
+    <script>
+        function aprekinat(tips) {
+            var s = document.getElementById("sekundes").value;
+            var atrumsMbps = 25;
+            
+            if (s == "" || isNaN(s)) return;
+
+            var baiti = (s * atrumsMbps * 1000000) / 8;
+            var rezultats;
+
+            if (tips == 'KB') {
+                rezultats = baiti / 1000;
+            } else {
+                rezultats = baiti / 1024;
+            }
+
+            document.getElementById("atbilde").value = rezultats;
+        }
+
+        function atiestatitFormu() {
+            document.getElementById("sekundes").value = "";
+            document.getElementById("atbilde").value = "";
+            var radio = document.getElementsByName("mervieniba");
+            for(var i=0; i<radio.length; i++) radio[i].checked = false;
+        }
+    </script>
+</head>
+<body>
+
+    <p>Aprēķināt cik daudz informācijas var lejupielādēt<br>
+    <input type="text" id="sekundes" onfocus="atiestatitFormu()"> sekundēs, ja interneta ātrums ir 25 Mbps.</p>
+
+    <p>Atbilde</p>
+
+    <input type="text" id="atbilde" readonly>
+    <input type="radio" name="mervieniba" onclick="aprekinat('KiB')"> KiB
+    <input type="radio" name="mervieniba" onclick="aprekinat('KB')"> KB
+
+</body>
+</html>
